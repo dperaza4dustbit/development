@@ -36,7 +36,7 @@ def prepare_success_comment(issue_number, vendor_label, chart_name):
 
 def prepare_sanity_failure_comment(issue_number, vendor_label, chart_name):
     msg = f"Thank you for submitting PR #{issue_number} for Helm Chart Certification!\n\n"
-    msg += f"Errors found with the Pull Request: \n"
+    msg += f"One or more errors were found with the pull request: \n"
     sanity_error_msg = os.environ.get("SANITY_ERROR_MESSAGE", "")
     owners_error_msg = os.environ.get("OWNERS_ERROR_MESSAGE", "")
     if sanity_error_msg:

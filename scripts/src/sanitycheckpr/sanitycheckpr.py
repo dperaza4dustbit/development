@@ -62,7 +62,7 @@ def ensure_only_chart_is_modified(api_url, repository, branch):
                     sys.exit(1)
     
     if none_chart_files:
-        msg = f"[ERROR] PR should only modify chart related files: {file_path}"
+        msg = f"[ERROR] PR includes one or more files not related to charts, e.g., {file_path}"
         print(msg)
         print(f"::set-output name=sanity-error-message::{msg}")
 
@@ -71,15 +71,15 @@ def ensure_only_chart_is_modified(api_url, repository, branch):
             path_parts = file_path.split("/")
             category = path_parts[1] # Second after charts
             if category == "partners":
-                msg = "[ERROR] OWNERS file should never be set directly by partners. See certification docs"
+                msg = "[ERROR] OWNERS file should never be set directly by partners. See certification docs."
                 print(msg)
                 print(f"::set-output name=owners-error-message::{msg}")
             elif match_found: # There is a mix of chart and non-chart files including OWNERS
-                msg = "[ERROR] Send OWNERS file by itself in a PR"
+                msg = "[ERROR] Send OWNERS file by itself in a PR."
                 print(msg)
                 print(f"::set-output name=owners-error-message::{msg}")
             elif file_count == 1: # OWNERS is the only file sent on PR
-                msg = "[ERROR] OWNERS file changes require manual review by maintainers"
+                msg = "[ERROR] OWNERS file changes require manual review by maintainers."
                 print(msg)
                 print(f"::set-output name=owners-error-message::{msg}") 
         sys.exit(1)
