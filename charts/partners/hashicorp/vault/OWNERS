@@ -8,6 +8,7 @@ users:
 - githubUsername: jasonodonnell
 - githubUsername: tomhjp
 - githubUsername: calvn
+- githubUsername: dperaza4dustbit
 vendor:
   label: hashicorp
   name: HashiCorp
