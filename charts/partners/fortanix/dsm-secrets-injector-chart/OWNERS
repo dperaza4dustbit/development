@@ -5,6 +5,7 @@ publicPgpKey: null
 users:
 - githubUsername: frankus0512
 - githubUsername: manasag
+- githubUsername: dperaza4dustbit
 vendor:
   label: fortanix
   name: Fortanix
