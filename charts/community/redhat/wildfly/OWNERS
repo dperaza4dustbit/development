@@ -5,6 +5,7 @@ publicPgpKey: null
 users:
   - githubUsername: bstansberry
   - githubUsername: jmesnil
+  - githubUsername: dperaza4dustbit
 vendor:
   label: redhat
   name: WildFly
