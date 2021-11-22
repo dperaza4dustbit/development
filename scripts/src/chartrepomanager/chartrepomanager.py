@@ -176,6 +176,8 @@ def set_package_digest(chart_entry):
     if head.status_code == 200:
         response = requests.get(url, allow_redirects=True)
         target_digest = hashlib.sha256(response.content).hexdigest()
+    else:
+        print(f"Chart URL head call status code: {head.status_code}")
 
     pkg_digest = ""
     if "digest" in chart_entry:
