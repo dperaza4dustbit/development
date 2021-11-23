@@ -119,6 +119,38 @@ entries:
     urls:
     - https://github.com/dperaza4dustbit/development/releases/download/hashicorp-vault-0.18.3/hashicorp-vault-0.18.3.tgz
     version: 0.18.3
+  - annotations:
+      charts.openshift.io/digest: sha256:675e9a7c8fc3f02a708ff795f38abe1042ffad0a72a01abc3a19f733d846baac
+      charts.openshift.io/lastCertifiedTimestamp: '2021-11-23T16:12:37.391163+00:00'
+      charts.openshift.io/provider: HashiCorp
+      charts.openshift.io/providerType: partner
+      charts.openshift.io/submissionTimestamp: '2021-11-23T16:13:16.809018+00:00'
+      charts.openshift.io/supportedOpenShiftVersions: '>=4.2'
+      charts.openshift.io/testedOpenShiftVersion: '4.9'
+    apiVersion: v2
+    appVersion: 1.9.0
+    description: Official HashiCorp Vault Chart
+    digest: 1fa5d20d7a7b810108c3313fe7ad54d4736f5b47f36ec70cc553ae335c0bd411
+    home: https://www.vaultproject.io
+    icon: https://github.com/hashicorp/vault/raw/f22d202cde2018f9455dec755118a9b84586e082/Vault_PrimaryLogo_Black.png
+    keywords:
+    - vault
+    - security
+    - encryption
+    - secrets
+    - management
+    - automation
+    - infrastructure
+    kubeVersion: '>= 1.14.0-0'
+    name: vault
+    sources:
+    - https://github.com/hashicorp/vault
+    - https://github.com/hashicorp/vault-helm
+    - https://github.com/hashicorp/vault-k8s
+    - https://github.com/hashicorp/vault-csi-provider
+    urls:
+    - https://github.com/dperaza4dustbit/development/releases/download/hashicorp-vault-0.18.4/hashicorp-vault-0.18.4.tgz
+    version: 0.18.4
   redhat-wildfly:
   - annotations:
       charts.openshift.io/digest: sha256:0fc18ecec3ca14a3fe4bcd7dd097e50f34945f412a476df34a60a235f02671fc
@@ -146,4 +178,4 @@ entries:
     urls:
     - https://github.com/dperaza4dustbit/development/releases/download/redhat-wildfly-1.5.2/redhat-wildfly-1.5.2.tgz
     version: 1.5.2
-generated: '2021-11-22T20:48:44.643283+00:00'
+generated: '2021-11-23T16:13:16.809018+00:00'
